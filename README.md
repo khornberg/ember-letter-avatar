@@ -6,7 +6,7 @@ Creates an `svg` letter avatar from text.
 
 The dummy app has example usage.
 
-/Users/imtapps/Desktop/example.png
+![preview](example.png)
 
 ### Inspiration
 
