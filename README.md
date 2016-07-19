@@ -4,7 +4,12 @@ Creates an `svg` letter avatar from text.
 
 ## Examples
 
-The dummy app has example usage.
+Create a letter avatar and apply a custom size and class.
+```
+{{letter-avatar text=" J. P." size=48 classNames='circle-right'}}
+```
+
+The dummy app has more examples.
 
 ![preview](example.png)
 
