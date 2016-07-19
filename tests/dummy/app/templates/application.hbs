@@ -1,3 +1,26 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1>Example usage</h1>
 
-{{outlet}}
+<style>
+  .circle-right {float:right; top:0; border-radius:100%;}
+  .circle {border-radius:100%;}
+</style>
+
+{{letter-avatar text="k h" size=24}}
+
+{{letter-avatar text=" J. P." size=48 classNames='circle-right'}}
+
+{{letter-avatar text="L" size=48 textColor="#ff0000"}}
+
+{{letter-avatar text="Zek O " size=24}}
+
+{{letter-avatar text="Al" size=24}}
+
+{{letter-avatar text="Al Bin Ein" size=24}}
+
+<br>
+
+{{letter-avatar text=" Earl Money "}}
+
+<br>
+
+{{letter-avatar text="Earl Yippy" color="#000000" classNames='circle'}}
