@@ -13,8 +13,11 @@ ember install letter-avatar
 One must pass `text` to the component.
 
 `size` defaults to `1024px`
+
 `fontSize` defaults to half of the size
+
 `fontFamily` defaults to `Arial`
+
 `textColor` defaults to `#ffffff`
 
 ## Examples
@@ -40,7 +43,7 @@ One can override the defaults by passing in an attribute of the same name.
 Resulting html
 
 ```
-<svg id="ember384" width="48" height="48" style="background:#f1c40f" class="ember-view"><text text-anchor="middle" x="50%" y="50%" dy="0.35em" fill="#ffffff" font-size="32" font-family="Arial">KH</text>
+<svg id="ember384" width="1024" height="1024" style="background:#f1c40f" class="ember-view"><text text-anchor="middle" x="50%" y="50%" dy="0.35em" fill="#ffffff" font-size="32" font-family="Arial">KH</text>
 </svg>
 ```
 
