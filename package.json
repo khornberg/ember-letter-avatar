@@ -14,7 +14,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/khornberg/ember-letter-avatar",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
