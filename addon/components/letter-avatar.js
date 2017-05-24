@@ -29,7 +29,7 @@ export default Ember.Component.extend({
     if (!this.get('color')) {
       let charIndex = this.get('initials').charCodeAt(0) - 64;
       let colorIndex = charIndex % 20;
-      this.set('color', this.get('colors')[colorIndex - 1]);
+      this.set('color', this.get('colors')[colorIndex]);
     }
   },
 });
