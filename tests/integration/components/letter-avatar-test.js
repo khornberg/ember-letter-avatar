@@ -101,4 +101,3 @@ test('can change default font family', function(assert) {
   this.render(hbs`{{letter-avatar text=text id='test' fontFamily='serif'}}`);
   assert.equal(this.$('#test text').css('font-family'), 'serif');
 });
-
