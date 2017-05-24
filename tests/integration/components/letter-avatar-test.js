@@ -70,13 +70,24 @@ test('can change text color', function(assert) {
 test('has default background color', function(assert) {
   this.set('text', 'k h');
   this.render(hbs`{{letter-avatar text=text id='test'}}`);
-  assert.equal(this.$('#test').css('background-color'), 'rgb(241, 196, 15)');
+  assert.equal(this.$('#test').css('background-color'), 'rgb(230, 126, 34)');
 });
 
 test('can change background color', function(assert) {
   this.set('text', 'k h');
   this.render(hbs`{{letter-avatar text=text id='test' color='#fafafa'}}`);
   assert.equal(this.$('#test').css('background-color'), 'rgb(250, 250, 250)');
+});
+
+test('background color stays within range of default colors', function(assert) {
+  let zerothLetter = String.fromCharCode(64);
+  this.set('text', `${zerothLetter}`);
+  this.render(hbs`{{letter-avatar text=text id='test' color='#fafafa'}}`);
+  assert.notEqual(this.$('#test').css('background-color'), 'undefined');
+  let twentiethLetter = String.fromCharCode(84);
+  this.set('text', `${twentiethLetter}`);
+  this.render(hbs`{{letter-avatar text=text id='test' color='#fafafa'}}`);
+  assert.notEqual(this.$('#test').css('background-color'), 'undefined');
 });
 
 test('has default font family', function(assert) {
@@ -90,3 +101,4 @@ test('can change default font family', function(assert) {
   this.render(hbs`{{letter-avatar text=text id='test' fontFamily='serif'}}`);
   assert.equal(this.$('#test text').css('font-family'), 'serif');
 });
+
