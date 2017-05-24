@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   layout,
   tagName: 'svg',
   attributeBindings: ['width', 'height', 'style'],
-  style: Ember.computed(function() { return new Ember.Handlebars.SafeString(`background:${this.get('color')}`); }),
+  style: Ember.computed(function() { return new Ember.String.htmlSafe(`background:${this.get('color')}`); }),
   size: 1024,
   width: Ember.computed(function() { return this.get('size');}),
   height: Ember.computed(function() { return this.get('size');}),
